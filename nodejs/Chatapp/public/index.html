@@ -1,8 +1,43 @@
 <!DOCTYPE html>
 <head>
-    <title>Welocme</title>
+    <title>Welcome to Gapshap App</title>
+    <link rel="stylesheet" href="css/style.css"></link>
 </head>
 <body>
-<h1>Wwelcome to  chatapp</h1>
+    <div class="join-container">
+        <header class="join-header">
+            <h1><i class="fas fa-smile"></i>  Welcome to Gapshap App</h1>
+        </header>
+        <main class="join-main">
+            <form action="chat.html">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="Enter username..."
+                        required
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="room">Group</label>
+                    <select name="room" id="room">
+                        <option value="Web Designer Group">Web Designer Group</option>
+                        <option value="Python Developer Group">Python Developer Group</option>
+                        <option value="Backend Developer Group">Backend Developer Group</option>
+                        <option value="Frontend Developer Group">Frontend Developer Group</option>
+                        <option value="Fullstack Developer Group">Fullstack Developer Group</option>
+                        <option value="Android Developer Group">Android Developer Group</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Join Chat</button>
+            </form>
+        </main>
+    </div>
+</body>
+
+
+
 </body>
 </html>
