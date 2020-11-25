@@ -46,7 +46,7 @@ socket.on('roomUsers',({room, users})=>{
 
 function outputMessage(msg){
     
-     let currentUser = username ;
+     let currentUser = msg.username ;
     let currentClass = 'other';
     if(username === msg.username) {currentUser = 'You';currentClass ='you';}
     const div = document.createElement('div');
@@ -86,12 +86,8 @@ function outputRoomName(room){
 // Add usrs into Dom 
 
 function outputRoomUsers(users){
-    let currentClass = 'other';
-   
  userList.innerHTML = `
- ${users.map(user =>
-    
-    ` <div class="conversation  ">
+ ${users.map(user => ` <div class="conversation ">
                             <i class="fas fa-user  fa-lg " id="user" ></i>
 
                             <div class="title-text">
